@@ -519,7 +519,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 491784695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1261178331}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: MenuUtama
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &491784695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,7 +786,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 958919490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1261178331}
+        m_TargetAssemblyTypeName: MenuGameOver, Assembly-CSharp
+        m_MethodName: Ulangi
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &958919490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,7 +946,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1261178329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 852e629c3dd2a034d944cf2eac36381f, type: 3}
+  m_Script: {fileID: 11500000, guid: 82c314a98d3302f4bafbfbebc45796ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1468520818

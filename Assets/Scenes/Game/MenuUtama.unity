@@ -478,7 +478,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 409432752}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcb28cb5a5faf2c4f891ee4a7ddcb0c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ce5e134c8825364eaf3da584af9f1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &491784692
@@ -563,7 +563,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 491784695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 409432754}
+        m_TargetAssemblyTypeName: MenuUtama, Assembly-CSharp
+        m_MethodName: Keluar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &491784695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -818,7 +830,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 958919490}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 409432754}
+        m_TargetAssemblyTypeName: MenuUtama, Assembly-CSharp
+        m_MethodName: Mainkan
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &958919490
 MonoBehaviour:
   m_ObjectHideFlags: 0
