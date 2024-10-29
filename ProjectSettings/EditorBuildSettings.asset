@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Game/MenuUtama.unity
+    guid: f9639be6266daf449ba5c2506064a7da
+  - enabled: 1
+    path: Assets/Scenes/Game/Labirin.unity
+    guid: 8c4fd142dcbd2a64c9571182758c45bb
+  - enabled: 1
+    path: Assets/Scenes/Game/MenuGameOver.unity
+    guid: 4d593d017a072e74cbb6fd6b33f8d560
   m_configObjects: {}
