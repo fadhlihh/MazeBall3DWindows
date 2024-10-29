@@ -10,6 +10,7 @@ public class Labirin : MonoBehaviour
     [SerializeField]
     float kecepatanRotasi;
 
+    // Variable untuk menentukan nilai rotasi labirin saat ini
     Vector3 rotasiSekarang = new Vector3(0, 0, 0);
 
     void Start()
@@ -18,31 +19,42 @@ public class Labirin : MonoBehaviour
 
     void Update()
     {
-        // Mendeteksi input ketika spasi mulai ditekan
-        if (Input.GetKeyDown(KeyCode.Space))
+        // Mendeteksi input selama 2 ditekan
+        if (Input.GetKey(KeyCode.W))
         {
-            // Kode di dalam blok if ini akan dijalankan ketika spasi mulai ditekan
-            Debug.Log("Spasi mulai ditekan");
+            // Kode di dalam blok if ini akan dijalankan selama W ditekan
+            // Mendapatkan nilai rotasi sekarang
+            // rotasi sekarang dirotasi di sumbu W +1 (arah atas) dengan kecepetan rotasi yang telah ditentukan
+            rotasiSekarang = rotasiSekarang + new Vector3(1, 0, 0) * kecepatanRotasi * Time.deltaTime;
         }
 
-        // Mendeteksi input selama spasi ditekan
-        if (Input.GetKey(KeyCode.Space))
+        // Mendeteksi input selama S ditekan
+        if (Input.GetKey(KeyCode.S))
         {
-            // Kode di dalam blok if ini akan dijalankan selama spasi ditekan
-            Debug.Log("Spasi ditekan");
-
+            // Kode di dalam blok if ini akan dijalankan selama S ditekan
+            // Mendapatkan nilai rotasi sekarang
+            // rotasi sekarang dirotasi di sumbu x -1 (arah bawah) dengan kecepetan rotasi yang telah ditentukan
+            rotasiSekarang = rotasiSekarang + new Vector3(-1, 0, 0) * kecepatanRotasi * Time.deltaTime;
         }
 
-        // Mendeteksi input ketika spasi dilepas
-        if (Input.GetKeyUp(KeyCode.Space))
+        // Mendeteksi input selama A ditekan
+        if (Input.GetKey(KeyCode.A))
         {
-            // Kode di dalam blok if ini akan dijalankan ketika spasi dilepas
-            Debug.Log("Spasi dilepas");
+            // Kode di dalam blok if ini akan dijalankan selama A ditekan
+            // Mendapatkan nilai rotasi sekarang
+            // rotasi sekarang dirotasi di sumbu z +1 (arah kiri) dengan kecepetan rotasi yang telah ditentukan
+            rotasiSekarang = rotasiSekarang + new Vector3(0, 0, 1) * kecepatanRotasi * Time.deltaTime;
         }
 
-        // Mendapatkan nilai rotasi sekarang
-        // rotasi sekarang dirotasi di sumbu x +1 dengan kecepetan rotasi yang telah ditentukan
-        rotasiSekarang = rotasiSekarang + new Vector3(1, 0, 0) * kecepatanRotasi * Time.deltaTime;
+        // Mendeteksi input selama D ditekan
+        if (Input.GetKey(KeyCode.D))
+        {
+            // Kode di dalam blok if ini akan dijalankan selama D ditekan
+            // Mendapatkan nilai rotasi sekarang
+            // rotasi sekarang dirotasi di sumbu z -1 (arah kanan) dengan kecepetan rotasi yang telah ditentukan
+            rotasiSekarang = rotasiSekarang + new Vector3(0, 0, -1) * kecepatanRotasi * Time.deltaTime;
+        }
+
         // Mengubah rotasi dari component transform labirin dengan nilai variable rotasi sekarang
         // Nilai vector rotasi perlu dikorvensi ke sudut menggunakan Quaternion.Euler
         transformLabirin.rotation = Quaternion.Euler(rotasiSekarang);
